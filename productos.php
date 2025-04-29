@@ -117,7 +117,7 @@ $stmt = $pdo->query("SELECT * FROM productos");
 <div class="productos">
   <?php while ($producto = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
     <div class="producto">
-      <img src="img/<?php echo htmlspecialchars($producto['imagen']); ?>" alt="<?php echo htmlspecialchars($producto['nombre']); ?>">
+    <img src="imagen/<?php echo htmlspecialchars($producto['imagen']); ?>" alt="<?php echo htmlspecialchars($producto['nombre']); ?>" onerror="this.onerror=null;this.src='img/noimagen.png';">
       <h3><?php echo htmlspecialchars($producto['nombre']); ?></h3>
       <p><?php echo htmlspecialchars($producto['descripcion']); ?></p>
       <p><strong>$<?php echo number_format($producto['precio'], 0, ',', '.'); ?></strong></p>

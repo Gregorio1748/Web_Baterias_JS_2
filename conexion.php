@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db = 'baterias_js';
+$db = 'ventas_nueva';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
